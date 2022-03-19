@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World|Github Pages博客搭建教程</title>
-    <url>/2022/03/18/hello-world/</url>
+    <url>/2022/03/19/hello-world/</url>
     <content><![CDATA[<h1 id="前言-白银的碎碎念"><a href="#前言-白银的碎碎念" class="headerlink" title="前言(白银的碎碎念):"></a>前言(白银的碎碎念):</h1><p>故事是这样发生的:<br>某天我在某个服务器宣传群看到了这个消息:</p>
 <blockquote>
 <p>我的天,<a href="https://curl.qcloud.com/iC6k2Gjj">https://curl.qcloud.com/iC6k2Gjj</a><br>腾讯云2核2G才40一年真的假的</p>
@@ -18,22 +18,23 @@
 <li>git工具</li>
 <li>Node.js</li>
 <li>yarn(可选,用于解决后续一个微小的BUG)</li>
-<li>个人域名(可选)<h3 id="1-安装Nodejs"><a href="#1-安装Nodejs" class="headerlink" title="1. 安装Nodejs"></a>1. 安装Nodejs</h3>Hexo是基于Nodejs编写的,所以需要安装Nodejs和npm工具。<blockquote>
+<li>个人域名(可选)</li>
+</ol>
+<h3 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h3><p>Hexo是基于Nodejs编写的,所以需要安装Nodejs和npm工具。</p>
+<blockquote>
 <p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
 </blockquote>
-</li>
-</ol>
 <p>选择最新版本即可。<br>安装完后,在命令行中键入以下命令检查有没有安装成功:</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 <p><img src="https://img1.imgtp.com/2022/03/19/QSjWtDRZ.png" alt="版本检查"></p>
-<h3 id="2-安装Git工具"><a href="#2-安装Git工具" class="headerlink" title="2. 安装Git工具"></a>2. 安装Git工具</h3><p>Git是目前世界上最先进的分布式版本控制系统,可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章,上传到GitHub的工具。</p>
+<h3 id="安装Git工具"><a href="#安装Git工具" class="headerlink" title="安装Git工具"></a>安装Git工具</h3><p>Git是目前世界上最先进的分布式版本控制系统,可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章,上传到GitHub的工具。</p>
 <blockquote>
 <p><a href="https://gitforwindows.org/">https://gitforwindows.org/</a></p>
 </blockquote>
 <p>下载完后安装一路next。<br>安装完后,可以打开Git Bash,右键窗口,点击Optins…,转到Window选项,将UI language选项设为zh_CN(中文)。<br><img src="https://img1.imgtp.com/2022/03/19/JyvGuPpU.png"><br>完成后,在命令行中键入以下命令检查有没有安装成功:</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
 <p><img src="https://img1.imgtp.com/2022/03/19/BuHuaBX9.png"><br>完成以上工作后就可以跳转至Hexo安装了,以下是可选安装:</p>
-<h3 id="3-安装yarn"><a href="#3-安装yarn" class="headerlink" title="3. 安装yarn"></a>3. 安装yarn</h3><p>Yarn是facebook发布的一个快速、可靠和安全的JavaScript依赖管理工具。</p>
+<h3 id="安装yarn"><a href="#安装yarn" class="headerlink" title="安装yarn"></a>安装yarn</h3><p>Yarn是facebook发布的一个快速、可靠和安全的JavaScript依赖管理工具。</p>
 <blockquote>
 <p><a href="https://github.com/yarnpkg/yarn/releases/">https://github.com/yarnpkg/yarn/releases/</a></p>
 </blockquote>
@@ -59,5 +60,12 @@
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>其中 <code>hexo g</code> 是生成网页静态文件的命令, <code>hexo s</code>是开启本地服务器的命令(即预览)。键入后,浏览器访问<a href="http://localhost:4000/%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E4%BD%A0%E7%94%9F%E6%88%90%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%BA%86%E3%80%82">http://localhost:4000/就可以看到你生成的博客了。</a><br>大概这样:<br><img src="https://img1.imgtp.com/2022/03/19/k949sw5M.jpg"></p>
 ]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客搭建</tag>
+        <tag>教程</tag>
+      </tags>
   </entry>
 </search>
