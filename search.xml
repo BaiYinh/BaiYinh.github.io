@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
+    <title>Hello World|Github Pages博客搭建教程</title>
     <url>/2022/03/18/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <content><![CDATA[<h1 id="前言-白银的碎碎念"><a href="#前言-白银的碎碎念" class="headerlink" title="前言(白银的碎碎念):"></a>前言(白银的碎碎念):</h1><p>故事是这样发生的:<br>某天我在某个服务器宣传群看到了这个消息:</p>
+<blockquote>
+<p>我的天,<a href="https://curl.qcloud.com/iC6k2Gjj">https://curl.qcloud.com/iC6k2Gjj</a><br>腾讯云2核2G才40一年真的假的</p>
+</blockquote>
+<p>经历过一个月两百多块的阿里云的我当时就绷不住了,马上打开电脑花了两百块买了三年。<br><img src="https://img1.imgtp.com/2022/03/19/2tJP3AAr.png"><br>配置完密钥,安装完宝塔,编译完LNMP后准备建站。后来想了想,既然已经做过了BBS,OL官网等网页,那就建个个人博客吧(其实是看了Lition的博客后想自己动手做一个),然后当天晚上在跟夜夜闲聊的时候才知道原来未成年人要有工作证明才能备案(</p>
+<div class="note warning simple"><p><del>日日夜夜</del></p>
+</div>
+<p>后来知道了Lition的博客是用Hexo生成的静态网页上传至Github Pages实现的,既不用花一分钱,也不用考虑被D的问题。于是说干就干,便旷了一天半网课搞这个Hexo。<br>正片如下:</p>
+<hr>
+<h1 id="Hexo介绍"><a href="#Hexo介绍" class="headerlink" title="Hexo介绍:"></a>Hexo介绍:</h1><p>Hexo是一款基于Node.js的静态博客框架,依赖少易于安装使用,可以方便的生成静态网页托管在GitHub、Coding和Gitee上,是搭建博客的首选框架。可以进入<a href="https://hexo.io/zh-cn/">hexo官网</a>进行详细查看,因为Hexo的创建者是台湾人,对中文的支持很友好,可以选择中文进行查看。</p>
+<h2 id="安装前置"><a href="#安装前置" class="headerlink" title="安装前置:"></a>安装前置:</h2><h4 id="你需要准备的东西如下"><a href="#你需要准备的东西如下" class="headerlink" title="你需要准备的东西如下:"></a>你需要准备的东西如下:</h4><ol>
+<li>Github账号</li>
+<li>git工具</li>
+<li>Node.js</li>
+<li>yarn(可选,用于解决后续一个微小的BUG)</li>
+<li>个人域名(可选)<h3 id="1-安装Nodejs"><a href="#1-安装Nodejs" class="headerlink" title="1. 安装Nodejs"></a>1. 安装Nodejs</h3>Hexo是基于Nodejs编写的,所以需要安装Nodejs和npm工具。<blockquote>
+<p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+</blockquote>
+</li>
+</ol>
+<p>选择最新版本即可。<br>安装完后,在命令行中键入以下命令检查有没有安装成功:</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p><img src="https://img1.imgtp.com/2022/03/19/QSjWtDRZ.png" alt="版本检查"></p>
+<h3 id="2-安装Git工具"><a href="#2-安装Git工具" class="headerlink" title="2. 安装Git工具"></a>2. 安装Git工具</h3><p>Git是目前世界上最先进的分布式版本控制系统,可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章,上传到GitHub的工具。</p>
+<blockquote>
+<p><a href="https://gitforwindows.org/">https://gitforwindows.org/</a></p>
+</blockquote>
+<p>下载完后安装一路next。<br>安装完后,可以打开Git Bash,右键窗口,点击Optins…,转到Window选项,将UI language选项设为zh_CN(中文)。<br><img src="https://img1.imgtp.com/2022/03/19/JyvGuPpU.png"><br>完成后,在命令行中键入以下命令检查有没有安装成功:</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+<p><img src="https://img1.imgtp.com/2022/03/19/BuHuaBX9.png"><br>完成以上工作后就可以跳转至Hexo安装了,以下是可选安装:</p>
+<h3 id="3-安装yarn"><a href="#3-安装yarn" class="headerlink" title="3. 安装yarn"></a>3. 安装yarn</h3><p>Yarn是facebook发布的一个快速、可靠和安全的JavaScript依赖管理工具。</p>
+<blockquote>
+<p><a href="https://github.com/yarnpkg/yarn/releases/">https://github.com/yarnpkg/yarn/releases/</a></p>
+</blockquote>
+<p>下载mis文件安装,安装完后,在命令行中键入以下命令检查有没有安装成功:</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">yarn -v</span><br></pre></td></tr></table></figure>
+<p><img src="https://img1.imgtp.com/2022/03/19/RWXdYHO7.png"></p>
+<hr>
+<h1 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h1><p>前面git和nodejs安装好后,就可以安装hexo了,你可以在任意位置创建一个文件夹Hexo,然后cd到这个文件夹下(或者在文件夹路径处键入cmd打开命令行)。<br>键入命令</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>然后用 <code>hexo v</code> 检查一下版本。<br><img src="https://img1.imgtp.com/2022/03/19/shSSgU70.png"><br>到这就全部安装完成了。<br>接下来需要初始化Hexo:</p>
+<h1 id="Hexo初始化"><a href="#Hexo初始化" class="headerlink" title="Hexo初始化"></a>Hexo初始化</h1><p>在文件夹路径处键入cmd打开命令行,确保当前路径在Hexo文件夹下。<br>键入命令:</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>新建完成后,指定文件夹目录下有:</p>
+<ul>
+<li>node_modules: 依赖包</li>
+<li>public:存放生成的静态页面</li>
+<li>scaffolds:生成文章的一些模板</li>
+<li>source:用来存放你的文章</li>
+<li>themes:主题</li>
+<li>_config.yml: 博客的配置文件</li>
+</ul>
+<p>键入以下命令:</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>其中 <code>hexo g</code> 是生成网页静态文件的命令, <code>hexo s</code>是开启本地服务器的命令(即预览)。键入后,浏览器访问<a href="http://localhost:4000/%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E4%BD%A0%E7%94%9F%E6%88%90%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%BA%86%E3%80%82">http://localhost:4000/就可以看到你生成的博客了。</a><br>大概这样:<br><img src="https://img1.imgtp.com/2022/03/19/k949sw5M.jpg"></p>
 ]]></content>
   </entry>
 </search>
