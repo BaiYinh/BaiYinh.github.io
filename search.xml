@@ -58,7 +58,7 @@
 </ul>
 <p>键入以下命令:</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>其中 <code>hexo g</code> 是生成网页静态文件的命令, <code>hexo s</code>是开启本地服务器的命令(即预览)。键入后,浏览器访问<a href="http://localhost:4000/%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E4%BD%A0%E7%94%9F%E6%88%90%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%BA%86%E3%80%82">http://localhost:4000/就可以看到你生成的博客了。</a><br>大概这样:<br><img src="https://img1.imgtp.com/2022/03/19/k949sw5M.jpg"></p>
+<p>其中 <code>hexo g</code> 是生成网页静态文件的命令, <code>hexo s</code>是开启本地服务器的命令(即预览)。键入后,浏览器访问<a href="http://localhost:4000/">http://localhost:4000/</a>就可以看到你生成的博客了。<br>大概这样:<br><img src="https://img1.imgtp.com/2022/03/19/k949sw5M.jpg"></p>
 ]]></content>
       <categories>
         <category>博客</category>
