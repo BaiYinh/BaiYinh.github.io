@@ -31,7 +31,7 @@
 <blockquote>
 <p><a href="https://gitforwindows.org/">https://gitforwindows.org/</a></p>
 </blockquote>
-<p>下载完后安装一路next。<br>安装完后,可以打开Git Bash,右键窗口,点击Optins…,转到Window选项,将UI language选项设为zh_CN(中文)。<br><img src="https://img1.imgtp.com/2022/03/19/JyvGuPpU.png"><br>完成后,在命令行中键入以下命令检查有没有安装成功:</p>
+<p>下载完后安装一路next。<br>安装完后,可以打开Git Bash,右键窗口,点击Optins,转到Window选项,将UI language选项设为zh_CN(中文)。<br><img src="https://img1.imgtp.com/2022/03/19/JyvGuPpU.png"><br>完成后,在命令行中键入以下命令检查有没有安装成功:</p>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
 <p><img src="https://img1.imgtp.com/2022/03/19/BuHuaBX9.png"><br>完成以上工作后就可以跳转至Hexo安装了,以下是可选安装:</p>
 <h3 id="安装yarn"><a href="#安装yarn" class="headerlink" title="安装yarn"></a>安装yarn</h3><p>Yarn是facebook发布的一个快速、可靠和安全的JavaScript依赖管理工具。</p>
