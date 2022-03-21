@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>TIM/QQ windows环境假死解决办法。</title>
-    <url>/2022/03/21/TIM-QQ/</url>
-    <content><![CDATA[<h1 id="前言-白银的碎碎念"><a href="#前言-白银的碎碎念" class="headerlink" title="前言(白银的碎碎念):"></a>前言(白银的碎碎念):</h1><p>最近电脑更新了win11,但是实际使用后发现打开TIM后会占用大量磁盘导致TIM假死,因为不想使用电脑端的QQ,于是就有了以下文文章:</p>
-<hr>
-<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><h2 id="固态硬盘"><a href="#固态硬盘" class="headerlink" title="固态硬盘"></a>固态硬盘</h2><p>更新驱动。<br>win10下自带的驱动是微软的ahci驱动,更新时间是2006年,需要更新intel快速储存驱动。<br>相关链接:</p>
-<blockquote>
-<p><a href="https://www.autotechint.com/driver-talent">Driver Talent</a>(驱动人生)<br><a href="http://drivergenius.com/">驱动精灵</a><br><a href="http://dm.weishi.360.cn/home.html">360驱动大师</a><br><a href="https://www.iobit.com/en/driver-booster.php">Driver Booster</a></p>
-</blockquote>
-<h2 id="机械硬盘"><a href="#机械硬盘" class="headerlink" title="机械硬盘"></a>机械硬盘</h2><p><a href="https://support.microsoft.com/zh-cn/topic/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%98%BE%E7%A4%BA-windows-10-%E8%AE%BE%E5%A4%87%E4%B8%8A-100-%E7%9A%84%E7%A3%81%E7%9B%98%E5%88%A9%E7%94%A8%E7%8E%87-%E5%B9%B6%E4%B8%94%E5%B7%B2%E5%90%AF%E7%94%A8%E6%B6%88%E6%81%AF%E6%8C%87%E7%A4%BA%E4%B8%AD%E6%96%AD-msi-%E6%A8%A1%E5%BC%8F-db9b59bd-0fcd-bc7a-825c-de0bb67f3097">微软官方解决方案</a></p>
-<p><a href="https://blog.csdn.net/qazwsxedc80/article/details/108911854">CSDN解决方案</a></p>
-<p>总结:<br>打开设备管理器,如下图,ahci控制器右键属性。切到详细信息选项卡,属性下选择“设备实例路径”,记下返回值。<br>win+R打开运行命令提示符,键入 <code>regedit</code> ,打开注册表编辑器,依次打开注册表路径 <code>计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\刚刚记录下的值\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties</code> 将MSISupported的值由1修改为0,关机重启。</p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>TIM</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World|Github Pages博客搭建教程</title>
     <url>/2022/03/19/hello-world/</url>
     <content><![CDATA[<h1 id="前言-白银的碎碎念"><a href="#前言-白银的碎碎念" class="headerlink" title="前言(白银的碎碎念):"></a>前言(白银的碎碎念):</h1><p>故事是这样发生的:<br>某天我在某个服务器宣传群看到了这个消息:</p>
@@ -106,7 +85,7 @@
 <blockquote>
 <p>(node:xxxx) Warning: Accessing non-existent property ‘xxxx’ of module exports inside circular dependency<br><img src="https://img1.imgtp.com/2022/03/20/vjxsufWT.png"></p>
 </blockquote>
-<p>这是因为我们安装的新版nodejs与hexo存在不兼容的现象,Hexo 这里的 warning 其实是 <a href="mailto:&#110;&#x69;&#x62;&#x40;&#x31;&#x2e;&#x31;&#46;&#x32;">&#110;&#x69;&#x62;&#x40;&#x31;&#x2e;&#x31;&#46;&#x32;</a> 这个包里的 stylus 引起的问题,nib 里的 dependencies 如下:</p>
+<p>这是因为我们安装的新版nodejs与hexo存在不兼容的现象,Hexo 这里的 warning 其实是 <a href="mailto:&#x6e;&#105;&#98;&#64;&#x31;&#46;&#x31;&#x2e;&#50;">&#x6e;&#105;&#98;&#64;&#x31;&#46;&#x31;&#x2e;&#50;</a> 这个包里的 stylus 引起的问题,nib 里的 dependencies 如下:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.54.5&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>所以解决方法如下:<br>在 Hexo 根目录里的 <code>package.json</code> 增加 <code>resolutions</code> 来覆盖版本定义:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;resolutions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.54.8&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
@@ -173,8 +152,29 @@
         <category>教程</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>博客搭建</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TIM/QQ windows环境假死解决办法。</title>
+    <url>/2022/03/21/TIM-QQ/</url>
+    <content><![CDATA[<h1 id="前言-白银的碎碎念"><a href="#前言-白银的碎碎念" class="headerlink" title="前言(白银的碎碎念):"></a>前言(白银的碎碎念):</h1><p>最近电脑更新了win11,但是实际使用后发现打开TIM后会占用大量磁盘导致TIM假死,因为不想使用电脑端的QQ,于是就有了以下文文章:</p>
+<hr>
+<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><h2 id="固态硬盘"><a href="#固态硬盘" class="headerlink" title="固态硬盘"></a>固态硬盘</h2><p>更新驱动。<br>win10下自带的驱动是微软的ahci驱动,更新时间是2006年,需要更新intel快速储存驱动。<br>相关链接:</p>
+<blockquote>
+<p><a href="https://www.autotechint.com/driver-talent">Driver Talent</a>(驱动人生)<br><a href="http://drivergenius.com/">驱动精灵</a><br><a href="http://dm.weishi.360.cn/home.html">360驱动大师</a><br><a href="https://www.iobit.com/en/driver-booster.php">Driver Booster</a></p>
+</blockquote>
+<h2 id="机械硬盘"><a href="#机械硬盘" class="headerlink" title="机械硬盘"></a>机械硬盘</h2><p><a href="https://support.microsoft.com/zh-cn/topic/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%98%BE%E7%A4%BA-windows-10-%E8%AE%BE%E5%A4%87%E4%B8%8A-100-%E7%9A%84%E7%A3%81%E7%9B%98%E5%88%A9%E7%94%A8%E7%8E%87-%E5%B9%B6%E4%B8%94%E5%B7%B2%E5%90%AF%E7%94%A8%E6%B6%88%E6%81%AF%E6%8C%87%E7%A4%BA%E4%B8%AD%E6%96%AD-msi-%E6%A8%A1%E5%BC%8F-db9b59bd-0fcd-bc7a-825c-de0bb67f3097">微软官方解决方案</a></p>
+<p><a href="https://blog.csdn.net/qazwsxedc80/article/details/108911854">CSDN解决方案</a></p>
+<p>总结:<br>打开设备管理器,如下图,ahci控制器右键属性。切到详细信息选项卡,属性下选择“设备实例路径”,记下返回值。<br>win+R打开运行命令提示符,键入 <code>regedit</code> ,打开注册表编辑器,依次打开注册表路径 <code>计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\刚刚记录下的值\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties</code> 将MSISupported的值由1修改为0,关机重启。</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>TIM</tag>
       </tags>
   </entry>
 </search>
