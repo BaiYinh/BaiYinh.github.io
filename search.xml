@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>OBS虚拟摄像头使用教程</title>
+    <url>/2022/03/24/OBS-Virtual-Cam/</url>
+    <content><![CDATA[<h1 id="前言-白银的碎碎念"><a href="#前言-白银的碎碎念" class="headerlink" title="前言(白银的碎碎念):"></a>前言(白银的碎碎念):</h1><p>前几天朋友找我说想要在日语课上整活:</p>
+<blockquote>
+<p><img src="https://img1.imgtp.com/2022/03/24/U35lVclA.png" alt="沈阳大街等你嗷"></p>
+</blockquote>
+<p>于是就有了这期视频:</p>
+
+<iframe src="//player.bilibili.com/player.html?aid=682289088&bvid=BV1NU4y1Z7YW&cid=552401617&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+<p>这几天Steam版本的OBS也上线了,等创意工坊开通了没准找素材了方便很多<br>正片如下:</p>
+<hr>
+<h1 id="B站教程"><a href="#B站教程" class="headerlink" title="B站教程:"></a>B站教程:</h1><blockquote>
+<p><a href="https://www.bilibili.com/read/cv6583793/">https://www.bilibili.com/read/cv6583793/</a></p>
+</blockquote>
+<h1 id="你需要的东西如下"><a href="#你需要的东西如下" class="headerlink" title="你需要的东西如下:"></a>你需要的东西如下:</h1><ul>
+<li>OBS安装程序(或Steam下载)</li>
+<li>虚拟摄像头插件(OBS-Virtual-Cam)</li>
+<li>勤奋的双手</li>
+</ul>
+<h1 id="OBS下载"><a href="#OBS下载" class="headerlink" title="OBS下载"></a>OBS下载</h1><p>官网:</p>
+<blockquote>
+<p><a href="https://obsproject.com/">https://obsproject.com/</a><br>下载Windows版本即可</p>
+</blockquote>
+<p>Steam:</p>
+<blockquote>
+<p><a href="https://store.steampowered.com/app/1905180/OBS_Studio/">https://store.steampowered.com/app/1905180/OBS_Studio&#x2F;</a></p>
+</blockquote>
+<p>下载安装完成后就可以安装虚拟摄像头插件了:</p>
+<h1 id="安装虚拟摄像头插件"><a href="#安装虚拟摄像头插件" class="headerlink" title="安装虚拟摄像头插件"></a>安装虚拟摄像头插件</h1><h2 id="下载安装OBS-Virtual-Cam"><a href="#下载安装OBS-Virtual-Cam" class="headerlink" title="下载安装OBS-Virtual-Cam"></a>下载安装OBS-Virtual-Cam</h2><blockquote>
+<p><a href="https://obsproject.com/forum/resources/obs-virtualcam.949/">https://obsproject.com/forum/resources/obs-virtualcam.949/</a></p>
+</blockquote>
+<p>下载完成后安装:<br>选择安装OBS的路径:</p>
+<blockquote>
+<p>默认路径:C:\Program Files\obs-studio<br>Steam路径:.\Steam\steamapps\common\OBS Studio\obs-studio(若安装盘与steam盘不同则在steam库中右键浏览本地文件)<br><img src="https://img1.imgtp.com/2022/03/24/UV3BvBtU.png" alt="浏览本地文件"></p>
+</blockquote>
+<p>虚拟摄像头数量填<code>1</code>即可:<br><img src="https://img1.imgtp.com/2022/03/24/ITkk4qwG.png"><br>Install安装<br>安装完成后打开OBS</p>
+<h1 id="OBS配置"><a href="#OBS配置" class="headerlink" title="OBS配置"></a>OBS配置</h1><p>自动配置如果不需要使用OBS来录像就选最后一项仅使用虚拟摄像头:<br><img src="https://img1.imgtp.com/2022/03/24/AzAvMm9B.png"><br>配置完成后,添加来源,图片素材选图像,视频素材选媒体源:<br><img src="https://img1.imgtp.com/2022/03/24/yKqddYCt.png"><br>如果大小与画布不匹配,右键素材,选择变换&gt;比例适配屏幕:<br><img src="https://img1.imgtp.com/2022/03/24/1883ZfHr.png"></p>
+<h1 id="打开虚拟摄像头"><a href="#打开虚拟摄像头" class="headerlink" title="打开虚拟摄像头"></a>打开虚拟摄像头</h1><p>点击上方工具&gt;虚拟摄像头:<br><img src="https://img1.imgtp.com/2022/03/24/5kdKSRbN.png"><br>选择水平翻转,点击启动:<br><img src="https://img1.imgtp.com/2022/03/24/GQczd0ia.png"><br>然后你就可以在你的设备里找到OBS-Camera的摄像头了,输出的画面就是OBS上的画面:<br><img src="https://img1.imgtp.com/2022/03/24/PDsubHF7.png"></p>
+<hr>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>现在你就可以拿着虚拟摄像头在班级群里整活了 )</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>OBS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TIM/QQ windows环境假死解决办法。</title>
     <url>/2022/03/21/TIM-QQ/</url>
     <content><![CDATA[<h1 id="前言-白银的碎碎念"><a href="#前言-白银的碎碎念" class="headerlink" title="前言(白银的碎碎念):"></a>前言(白银的碎碎念):</h1><p>最近电脑更新了win11,但是实际使用后发现打开TIM后会占用大量磁盘导致TIM假死,因为不想使用电脑端的QQ,于是就有了以下文文章:</p>
@@ -17,8 +69,8 @@
         <category>教程</category>
       </categories>
       <tags>
-        <tag>TIM</tag>
         <tag>教程</tag>
+        <tag>TIM</tag>
       </tags>
   </entry>
   <entry>
@@ -106,7 +158,7 @@
 <blockquote>
 <p>(node:xxxx) Warning: Accessing non-existent property ‘xxxx’ of module exports inside circular dependency<br><img src="https://img1.imgtp.com/2022/03/20/vjxsufWT.png"></p>
 </blockquote>
-<p>这是因为我们安装的新版nodejs与hexo存在不兼容的现象,Hexo 这里的 warning 其实是 <a href="mailto:&#x6e;&#x69;&#98;&#x40;&#49;&#46;&#49;&#x2e;&#50;">&#x6e;&#x69;&#98;&#x40;&#49;&#46;&#49;&#x2e;&#50;</a> 这个包里的 stylus 引起的问题,nib 里的 dependencies 如下:</p>
+<p>这是因为我们安装的新版nodejs与hexo存在不兼容的现象,Hexo 这里的 warning 其实是 <a href="mailto:&#x6e;&#x69;&#98;&#x40;&#49;&#x2e;&#x31;&#46;&#x32;">&#x6e;&#x69;&#98;&#x40;&#49;&#x2e;&#x31;&#46;&#x32;</a> 这个包里的 stylus 引起的问题,nib 里的 dependencies 如下:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.54.5&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>所以解决方法如下:<br>在 Hexo 根目录里的 <code>package.json</code> 增加 <code>resolutions</code> 来覆盖版本定义:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;resolutions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.54.8&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
