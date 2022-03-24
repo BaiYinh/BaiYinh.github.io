@@ -5,7 +5,7 @@
     <url>/2022/03/24/OBS-Virtual-Cam/</url>
     <content><![CDATA[<h1 id="前言-白银的碎碎念"><a href="#前言-白银的碎碎念" class="headerlink" title="前言(白银的碎碎念):"></a>前言(白银的碎碎念):</h1><p>前几天朋友找我说想要在日语课上整活:</p>
 <blockquote>
-<p><img src="https://img1.imgtp.com/2022/03/24/U35lVclA.png" alt="沈阳大街等你嗷"></p>
+<p><img src="https://img1.imgtp.com/2022/03/24/SotNuQhB.png" alt="沈阳大街等你嗷"></p>
 </blockquote>
 <p>于是就有了这期视频:</p>
 
@@ -162,7 +162,7 @@
 <blockquote>
 <p>(node:xxxx) Warning: Accessing non-existent property ‘xxxx’ of module exports inside circular dependency<br><img src="https://img1.imgtp.com/2022/03/20/vjxsufWT.png"></p>
 </blockquote>
-<p>这是因为我们安装的新版nodejs与hexo存在不兼容的现象,Hexo 这里的 warning 其实是 <a href="mailto:&#110;&#105;&#98;&#x40;&#49;&#46;&#49;&#x2e;&#50;">&#110;&#105;&#98;&#x40;&#49;&#46;&#49;&#x2e;&#50;</a> 这个包里的 stylus 引起的问题,nib 里的 dependencies 如下:</p>
+<p>这是因为我们安装的新版nodejs与hexo存在不兼容的现象,Hexo 这里的 warning 其实是 <a href="mailto:&#x6e;&#x69;&#98;&#x40;&#x31;&#x2e;&#49;&#46;&#50;">&#x6e;&#x69;&#98;&#x40;&#x31;&#x2e;&#49;&#46;&#50;</a> 这个包里的 stylus 引起的问题,nib 里的 dependencies 如下:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.54.5&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>所以解决方法如下:<br>在 Hexo 根目录里的 <code>package.json</code> 增加 <code>resolutions</code> 来覆盖版本定义:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;resolutions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.54.8&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
