@@ -225,7 +225,7 @@
 <blockquote>
 <p>(node:xxxx) Warning: Accessing non-existent property ‘xxxx’ of module exports inside circular dependency<br><img src="https://img1.imgtp.com/2022/03/20/vjxsufWT.png"></p>
 </blockquote>
-<p>这是因为我们安装的新版nodejs与hexo存在不兼容的现象,Hexo 这里的 warning 其实是 <a href="mailto:&#x6e;&#x69;&#98;&#x40;&#x31;&#x2e;&#49;&#46;&#50;">&#x6e;&#x69;&#98;&#x40;&#x31;&#x2e;&#49;&#46;&#50;</a> 这个包里的 stylus 引起的问题,nib 里的 dependencies 如下:</p>
+<p>这是因为我们安装的新版nodejs与hexo存在不兼容的现象,Hexo 这里的 warning 其实是 <a href="mailto:&#x6e;&#105;&#98;&#x40;&#x31;&#x2e;&#x31;&#x2e;&#x32;">&#x6e;&#105;&#98;&#x40;&#x31;&#x2e;&#x31;&#x2e;&#x32;</a> 这个包里的 stylus 引起的问题,nib 里的 dependencies 如下:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.54.5&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>所以解决方法如下:<br>在 Hexo 根目录里的 <code>package.json</code> 增加 <code>resolutions</code> 来覆盖版本定义:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;resolutions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.54.8&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
